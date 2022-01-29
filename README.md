@@ -1,4 +1,4 @@
 # My Portofolio Web
 build with Tailwind CSS
 
-link : https://rifatzulfn.netifly.app
+link : https://rifatzulfn.netlify.app
