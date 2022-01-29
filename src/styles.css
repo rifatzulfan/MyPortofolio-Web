@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins;
+    }
+
+    a,
+    p {
+        @apply font-open-sans
+    }
+
+}
+
+@layer components {
+    .btn-secondary {
+        @apply text-white inline-flex px-4 py-3 border rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+    }
+
+    .btn-primary {
+        @apply text-slate-900 inline-flex px-4 py-3 bg-gradient-to-tr from-amber-500 to-amber-300 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+    }
+
+
+}
+
+.gradients {
+    background: linear-gradient(90deg, #A5B4FC, #FDA4AF, #FCD34D, #5EEAD4);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: fit-content;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradients-quote {
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, #A5B4FC, #FDA4AF, #FCD34D, #5EEAD4);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 9s ease infinite;
+    height: fit-content;
+}
+
+.bg-glass {
+    background: radial-gradient(106.58% 702.6% at 7.28% 6.58%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #F8FAFC;
+}
+
+.ferem {
+    top: 36rem;
+}
+
+.l54 {
+    left: 54%;
+}
+
+.l74 {
+    left: 70%;
+}
+
+.project:hover {
+    transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.project {
+    transition: 0.4s ease all;
+}
+
+.box {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+}
+
+
+.g-shadow {
+    box-shadow: 0px 2px 0px #5EEAD4;
+}
+
+.g-shadow:hover {
+    box-shadow: 0px 2px 0px #5EEAD4, 0px 14px 24px rgba(94, 234, 212, 0.7);
+}
+
+.r-shadow {
+    box-shadow: 0px 2px 0px #FDA4AF;
+}
+
+.r-shadow:hover {
+    box-shadow: 0px 2px 0px #FDA4AF, 0px 14px 24px rgba(253, 164, 175, 0.7);
+}
+
+.i-shadow {
+    box-shadow: 0px 2px 0px #A5B4FC;
+}
+
+.i-shadow:hover {
+    box-shadow: 0px 2px 0px #A5B4FC, 0px 14px 24px rgba(165, 180, 252, 0.7);
+}
+
+.a-shadow {
+    box-shadow: 0px 2px 0px #FCD34D;
+}
+
+.a-shadow:hover {
+    box-shadow: 0px 2px 0px #FCD34D, 0px 14px 24px rgba(252, 211, 77, 0.7);
+}
